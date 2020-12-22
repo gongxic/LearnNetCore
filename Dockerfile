@@ -1,18 +1,18 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:5.0 AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS build
 WORKDIR /src
-COPY ["LearnNetCore/LearnNetCore.csproj", "LearnNetCore/"]
-RUN dotnet restore "LearnNetCore/LearnNetCore.csproj"
+COPY ["LearnNetCore/LearnNet5.csproj", "LearnNet5/"]
+RUN dotnet restore "LearnNetCore/LearnNet5.csproj"
 COPY . .
-WORKDIR "/src/LearnNetCore"
-RUN dotnet build "LearnNetCore.csproj" -c Release -o /app/build
+WORKDIR "/src/LearnNet5"
+RUN dotnet build "LearnNet5.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "LearnNetCore.csproj" -c Release -o /app/publish
+RUN dotnet publish "LearnNet5.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "LearnNetCore.dll"]
+ENTRYPOINT ["dotnet", "LearnNet5.dll"]

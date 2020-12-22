@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:5.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["LearnNetCore/LearnNet5.csproj", "LearnNet5/"]
 RUN dotnet restore "LearnNetCore/LearnNet5.csproj"

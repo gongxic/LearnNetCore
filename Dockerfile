@@ -3,8 +3,8 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["LearnNetCore/LearnNet5.csproj", "LearnNet5/"]
-RUN dotnet restore "LearnNetCore/LearnNet5.csproj"
+COPY ["LearnNet5/LearnNet5.csproj", "LearnNet5/"]
+RUN dotnet restore "LearnNet5/LearnNet5.csproj"
 COPY . .
 WORKDIR "/src/LearnNet5"
 RUN dotnet build "LearnNet5.csproj" -c Release -o /app/build

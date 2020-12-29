@@ -10,8 +10,8 @@ namespace AsyncAwaitTest
         private static void Main(string[] args)
         {
 
-            //var test1 = new AsyncAwaitTest1();
-            //test1.Test();
+            var test1 = new AsyncAwaitTest1();
+            test1.Test();
 
             Console.WriteLine("Test 2 Begion!");
             var test2 = new AsyncAwaitTest2();

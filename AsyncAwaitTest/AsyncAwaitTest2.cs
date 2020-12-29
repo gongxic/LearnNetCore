@@ -45,10 +45,10 @@ namespace AsyncAwaitTest
             Console.WriteLine($"Thread id is {Thread.CurrentThread.ManagedThreadId}");
             using (var wc = new WebClient())
             {
-                Console.WriteLine($" 开 始调用 id = {id}：{Watch.ElapsedMilliseconds} ms");
+                Console.WriteLine($"开始调用 id = {id}：{Watch.ElapsedMilliseconds} ms");
                 System.Threading.Thread.Sleep(1000);
                 var result = await wc.DownloadStringTaskAsync(address);
-                Console.WriteLine($" 调 用完成 id = {id}：{Watch.ElapsedMilliseconds} ms");
+                Console.WriteLine($"调用完成 id = {id}：{Watch.ElapsedMilliseconds} ms");
                 return result.Length;
             }
 

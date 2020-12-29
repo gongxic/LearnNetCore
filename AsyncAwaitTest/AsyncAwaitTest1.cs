@@ -49,8 +49,8 @@ namespace AsyncAwaitTest
                 System.Threading.Thread.Sleep(1000);
                 var result = wc.DownloadString(address);
                 Console.WriteLine($" 调 用完成 id = {id}：{Watch.ElapsedMilliseconds} ms");
+                return result.Length;
             }
-            return result.Length;
         }
 
 

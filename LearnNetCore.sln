@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnNet5", "LearnNet5\Lear
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwaitTest", "AsyncAwaitTest\AsyncAwaitTest.csproj", "{9F01AB20-C4B4-46D1-A19D-D63698D502E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncExample", "AsyncExample\AsyncExample.csproj", "{8A6CAAB5-F2E4-4954-8D8C-068A6EAFDD76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9F01AB20-C4B4-46D1-A19D-D63698D502E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F01AB20-C4B4-46D1-A19D-D63698D502E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F01AB20-C4B4-46D1-A19D-D63698D502E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6CAAB5-F2E4-4954-8D8C-068A6EAFDD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6CAAB5-F2E4-4954-8D8C-068A6EAFDD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6CAAB5-F2E4-4954-8D8C-068A6EAFDD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6CAAB5-F2E4-4954-8D8C-068A6EAFDD76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

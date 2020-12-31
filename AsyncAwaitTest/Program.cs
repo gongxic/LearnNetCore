@@ -16,6 +16,10 @@ namespace AsyncAwaitTest
             Console.WriteLine("Test 2 Begion!");
             var test2 = new AsyncAwaitTest2();
             test2.Test();
+            Console.WriteLine("Test 3 Begion!");
+            var test3 = new AsyncAwaitTest3();
+            test3.Test();
+
 
             Console.Read();
 

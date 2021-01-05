@@ -149,8 +149,13 @@ namespace AsyncAwaitTest
 
             void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
             {
-                throw new NotImplementedException();
+                this.SetStateMachine(stateMachine);
             }
+
+            private void SetStateMachine(IAsyncStateMachine stateMachine)
+            {
+            }
+
         }
     }
 }

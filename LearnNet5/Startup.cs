@@ -32,7 +32,7 @@ namespace LearnNet5
                 option.AddDefaultPolicy(
                 buider =>
                 {
-                    buider.WithOrigins("https://react.miniprogram.icu").AllowAnyHeader().AllowAnyMethod();
+                    buider.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
                 });
             });
             services.AddControllers();

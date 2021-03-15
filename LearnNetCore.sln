@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnNetCore", "LearnNetCore\LearnNetCore.csproj", "{FE39A0F3-EA2A-4BAE-BAEA-BB04AF44917E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnNet5", "LearnNet5\LearnNet5.csproj", "{6BBC5D08-5AA4-404D-A431-AF6E9C840A18}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwaitTest", "AsyncAwaitTest\AsyncAwaitTest.csproj", "{9F01AB20-C4B4-46D1-A19D-D63698D502E2}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE39A0F3-EA2A-4BAE-BAEA-BB04AF44917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE39A0F3-EA2A-4BAE-BAEA-BB04AF44917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE39A0F3-EA2A-4BAE-BAEA-BB04AF44917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE39A0F3-EA2A-4BAE-BAEA-BB04AF44917E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6BBC5D08-5AA4-404D-A431-AF6E9C840A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BBC5D08-5AA4-404D-A431-AF6E9C840A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BBC5D08-5AA4-404D-A431-AF6E9C840A18}.Release|Any CPU.ActiveCfg = Release|Any CPU

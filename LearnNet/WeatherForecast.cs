@@ -1,6 +1,6 @@
 using System;
 
-namespace LearnNet5
+namespace LearnNet
 {
     public class WeatherForecast
     {

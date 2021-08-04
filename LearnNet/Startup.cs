@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LearnNet5
+namespace LearnNet
 {
     public class Startup
     {

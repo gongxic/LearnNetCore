@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0.100-preview.6-alpine3.13 AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0.100-preview.6-alpine3.13 AS build
 WORKDIR /src
 COPY ["LearnNet/LearnNet.csproj", "LearnNet/"]
 RUN dotnet restore "LearnNet/LearnNet.csproj"
